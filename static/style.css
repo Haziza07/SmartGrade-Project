@@ -1,0 +1,144 @@
+/* ------------------------
+   🌿 Background & Body
+------------------------ */
+body {
+    background: linear-gradient(to right, #f1feeb, #C3D8B9);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 0;
+    transition: opacity 0.8s ease-in;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+/* ------------------------
+   📦 Card Styling
+------------------------ */
+.card {
+    border-radius: 1rem;
+    background: #f2f4e7;
+}
+
+.result-card {
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ------------------------
+   📈 Progress Bar
+------------------------ */
+.progress {
+    height: 28px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #e3e9da;
+}
+
+.progress-bar {
+    font-weight: 600;
+    transition: width 1s ease;
+}
+
+/* ------------------------
+   💡 Analisis Faktor Belajar
+------------------------ */
+.list-group-item {
+    background-color: #f8f9f2;
+    border: none;
+    border-left: 5px solid #A3B18A;
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+    color: #2f3e26;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #eaf0e2;
+}
+
+/* ------------------------
+   🔘 Tombol Utama
+------------------------ */
+.btn-custom {
+    background-color: #A3B18A; /* warna dasar tombol */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Efek hover */
+.btn-custom:hover {
+    background-color: #88976C;
+    box-shadow: 0 4px 10px rgba(187, 206, 152, 0.8);
+    transform: scale(1.05);
+}
+
+/* ------------------------
+   ✏️ Form Input & Select
+------------------------ */
+.form-control:focus, .form-select:focus {
+    border-color: #b4c68f;
+    box-shadow: 0 0 0 0.2rem #c6da9e;
+}
+
+/* ------------------------
+   🧭 Headings & Text
+------------------------ */
+h2, h4, h5 {
+    color: #303E29;
+}
+
+h1.display-4 {
+    color: #48603a;
+}
+
+.text-primary {
+    color: #668054 !important;
+}
+
+/* ------------------------
+   ⚙️ Footer
+------------------------ */
+footer {
+    margin-top: 60px;
+    text-align: center;
+    color: #666;
+}
+
+/* ------------------------
+   📱 Mobile Responsive Tweaks
+------------------------ */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    button.btn {
+        font-size: 1.1rem;
+        padding: 12px;
+    }
+
+    .list-group-item {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+}
